@@ -1,7 +1,0 @@
-{
-  "routes": [
-    { "src": "/", "dest": "/api/hello" },
-    { "src": "/users", "dest": "/api/users" },
-    { "src": "/users/([0-9]+)", "dest": "/api/users/$1" }
-  ]
-}
