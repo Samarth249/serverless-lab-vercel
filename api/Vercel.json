@@ -1,8 +1,7 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "api/hello.js", "use": "@vercel/node" },
-    { "src": "api/users.js", "use": "@vercel/node" },
-    { "src": "api/users/[id].js", "use": "@vercel/node" }
+  "routes": [
+    { "src": "/", "dest": "/api/hello" },
+    { "src": "/users", "dest": "/api/users" },
+    { "src": "/users/(?<id>[^/]+)", "dest": "/api/users/$id" }
   ]
 }
